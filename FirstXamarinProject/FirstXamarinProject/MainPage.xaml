@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstXamarinProject.MainPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Entry Placeholder="Username" x:Name="username" BackgroundColor="Beige"></Entry>
+        <Entry Placeholder="Password" x:Name="password"></Entry>
+        
+        <Label Text="Hello Riddhi" x:Name="hello_label" TextColor="AliceBlue"></Label>
+        <Button Text="Signin" Clicked="Button_Clicked" x:Name="loginbtn"> </Button>
+    </StackLayout>
+
+</ContentPage>
