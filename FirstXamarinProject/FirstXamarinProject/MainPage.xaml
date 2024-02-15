@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FirstXamarinProject.MainPage">
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Entry Placeholder="Username" x:Name="username" BackgroundColor="Beige"></Entry>
-        <Entry Placeholder="Password" x:Name="password"></Entry>
-        
-        <Label Text="Hello Riddhi" x:Name="hello_label" TextColor="AliceBlue"></Label>
-        <Button Text="Signin" Clicked="Button_Clicked" x:Name="loginbtn"> </Button>
+    <StackLayout Padding="20">
+        <Label Text="{Binding Source={x:Reference MySlider},
+     Path=Value, StringFormat='Font size: {0}px'}" 
+        FontSize="Medium" />
+        <Label Text="You can't blame gravity for falling in love."
+               x:Name="MyLabel" 
+               FontSize="{Binding Source={x:Reference MySlider},
+            Path=Value}" />
+        <Slider x:Name="MySlider" Maximum="50" Minimum="10" BackgroundColor="Black" MaximumTrackColor="Black"/>
+       
     </StackLayout>
 
 </ContentPage>

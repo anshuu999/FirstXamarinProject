@@ -12,34 +12,38 @@ namespace FirstXamarinProject
     {
         public MainPage()
 
+
+
         {
             InitializeComponent();
-           
-          
+
+        
+
 
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            if (username.Text=="admin")
-            {
-                if (password.Text == "admin")
-                {
-                    DisplayAlert("Success", "Login success", "ok");
-                }
-                else
-                {
-                    DisplayAlert("Alert", "Password is wrong", "Ok");
-                }
-            }
-            else
-            {
-                DisplayAlert("Alert", "Username is wrong", "Ok");
-                username.Text = "";
-                password.Text = "";
-            }
-        }
+        /* private void Button_Clicked(object sender, EventArgs e)
+         {
+             if (username.Text=="admin")
+             {
+                 if (password.Text == "admin")
+                 {
+                     DisplayAlert("Success", "Login success", "ok");
+                 }
+                 else
+                 {
+                     DisplayAlert("Alert", "Password is wrong", "Ok");
+                 }
+             }
+             else
+             {
+                 DisplayAlert("Alert", "Username is wrong", "Ok");
+                 username.Text = "";
+                 password.Text = "";
+             }
+         }
 
+     }*/
     }
-    }
+}
 
